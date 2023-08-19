@@ -8,8 +8,12 @@ export const HomePage = () => {
 
     return (
         <>
-            <h1>Home Page { user?.name }</h1>
+            <h1 aria-label="title">Home Page { user?.name }</h1>
             <hr />
+
+            <pre aria-label="pre">
+                { JSON.stringify( user, null, 3 )}
+            </pre>
         </>
     )
 }

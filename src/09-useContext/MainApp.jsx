@@ -14,8 +14,8 @@ export const MainApp = () => {
             
             <Routes>
                 <Route path='/' element={ <HomePage /> } />
-                <Route path='login' element={ <LoginPage /> } />
                 <Route path='about' element={ <AboutPage /> } />
+                <Route path='login' element={ <LoginPage /> } />
                 
                 <Route path='/*' element={ <Navigate to='/' /> } />
 
